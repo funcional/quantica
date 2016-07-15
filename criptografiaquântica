@@ -3,21 +3,21 @@
 A criptografia quântica resolve o problema da distribuição de chaves da criptografia clássica
 Para isso baseia-se principalmente no princípio da incerteza quântica
 
-Incerteza :
+# Incerteza :
 No mundo quântico é a incerteza é inerente aos sistemas
 Essa incerteza não é decorrente da incapacidade dos instrumentos de medida usados
 Ex.: A impossibilidade de medir duas polarizações de um mesmo fóton
 
-Protocolo BB84
+# Protocolo BB84
 Resolve o problema da distribuição de chaves para o uso com um algoritmo do tipo one-time pad que é absolutamente seguro
 É dividido em duas etapas, na primeira usa um  canal de comunicação quântico e na segunda um clássico
 
-Protocolo BB84 - Primeira Etapa :
+# Protocolo BB84 - Primeira Etapa :
 Alice usa fótons polarizados, que podem ser medidos em 3 bases: retilínea (vertical ou horizontal), circular (à esquerda ou à direita) e diagonal (45 ou 135 graus)
 Alice modula aleatoriamente os fótons para um de 4 estados: horizontal, vertical, circular à esquerda ou circular à direita
 Bob escolhe aleatoriamente qual polarização usar para medir cada fóton recebido (retilínea ou circular)
 
-Protocolo BB84 - Primeira Etapa :
+# Protocolo BB84 - Primeira Etapa :
 Por exemplo, Alice envia:
 |-|>--<-<||<-|-|<>-|>>>|-||<-<-|
 Bob utiliza as seguintes polarizações:
@@ -25,14 +25,14 @@ ooooo+oo+o+oo+++oo+++++o+++++oo+
 Bob então lê (sem erros):
 <<>><-<>->|<<|-|<>-|--->-||--<<|
 
-Protocolo BB84 – Segunda Etapa:
+# Protocolo BB84 – Segunda Etapa:
 Alice e Bob se comunicam através de um canal público (inseguro)
 Bob envia para Alice a sequência de polarizações que ele utilizou:
 ooooo+oo+o+oo+++oo+++++o+++++oo+
 Alice indica quais as medidas foram do tipo correto:
 nnnynyynnnyynyyyyyyynnnnyyynyyny
 
-Protocolo BB84 – Segunda Etapa:
+# Protocolo BB84 – Segunda Etapa:
 Alice e Bob verificam nas suas seqüências quais as corretas:
 nnnynyynnnyynyyyyyyynnnnyyynyyny
 |-|>--<-<||<-|-|<>-|>>>|-||<-<-|
@@ -42,15 +42,13 @@ nnnynyynnnyynyyyyyyynnnnyyynyyny
    > -<   |< |-|<>-|    -|| -< |
    > -<   |< |-|<>-|    -|| -< |
 
-
-Protocolo BB84 – Segunda Etapa : 
+# Protocolo BB84 – Segunda Etapa : 
 O objetivo da segunda fase é identificar a presença de Eve através da comparação dos valores lidos 
 Caso haja alguma incoerência (polarização certa e valor errado) isso indica que Eve viu a chave portanto não é segura
 Caso contrário a chave é garantidamente segura
 Erros na medida (por parte de Bob) devido à incerteza quântica reduzem a quantidade de bits trocados
 
-
-Conclusões
+# Conclusões
 
 A criptografia quântica é capaz de garantir segurança absoluta baseada em leis da física 
 A computação quântica é capaz de quebrar algoritmos de segurança amplamente usados hoje em dia
