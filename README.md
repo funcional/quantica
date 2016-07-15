@@ -1,0 +1,2 @@
+# quantica
+estudos sobre quântica.
